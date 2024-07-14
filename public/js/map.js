@@ -1,6 +1,6 @@
 var map = new maplibregl.Map({
   container: 'map',
-  style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // stylesheet location
+  style: 'https://api.maptiler.com/maps/streets/style.json?key=2tOsR36f6L1ZrLKWUy8q', // stylesheet location
   center: coordinates, // starting position [lng, lat]
   zoom: 8// starting zoom
 });
