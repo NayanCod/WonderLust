@@ -33,11 +33,32 @@
                 <div class="invalid-feedback">Country name should be valid</div>
             </div>
         </div>
-        <div class="mb-3">
-            <label for="location" class="form-label">Location</label>
-            <input name="listing[location]" type="text" value="<%= listing.location %>" class="form-control" required/>
-            <div class="invalid-feedback">Location should be valid</div>
+        <div class="row">
+            <div class="mb-3 col-md-7">
+                <label for="location" class="form-label">Location</label>
+                <input name="listing[location]" type="text" value="<%= listing.location %>" class="form-control" required/>
+                <div class="invalid-feedback">Location should be valid</div>
+            </div>
+            <div class="mb-3 col-md-5">
+                <div class="dropdown">
+                    <label for="category" class="form-label">Category</label>
+                    <select id="category" name="listing[category]" class="form-control" required>
+                        <option disabled selected value>--Select Category--</option>
+                        <option value="Rooms">Rooms</option>
+                        <option value="Mountains">Mountains</option>
+                        <option value="Beach">Beach</option>
+                        <option value="Arctic">Arctic</option>
+                        <option value="Iconic Cities">Iconic Cities</option>
+                        <option value="Farms">Farms</option>
+                        <option value="Camping">Camping</option>
+                        <option value="Castles">Castles</option>
+                        <option value="Deserts">Deserts</option>
+                        <option value="Amazing Pools">Amazing Pools</option>
+                    </select>
+                </div>
+            </div>
         </div>
+
         <button class="btn btn-dark edit-btn mt-3">Edit</button>
     </form>
     </div>
