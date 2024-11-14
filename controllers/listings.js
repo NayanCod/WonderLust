@@ -14,7 +14,7 @@ module.exports.index = async(req, res)=>{
         {icon: "fa-solid fa-person-swimming", text: "Amazing Pools"},
         {icon: "fa-solid fa-temperature-full", text: "Deserts"},
     ];
-    const allListings = await Listing.find({});
+    const allListings = await Listing.find({}).sort({ createdAt: -1 });
     res.render("listings/index.ejs", {allListings, filterList});
 };
 
